@@ -1,0 +1,22 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Jacques Bachelier -- Dev -- @jac_bachelier
+
+# THANKS
+
+    <your_name>
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    GRUNT, NPM, NODE
+
+  _____            ______
+  |_  |            | ___ \
+    | | __ _  ___  | |_/ / __ _  ___
+    | |/ _` |/ __| | ___ \/ _` |/ __|
+/\__/ / (_| | (__  | |_/ / (_| | (__
+\____/ \__,_|\___| \____/ \__,_|\___|

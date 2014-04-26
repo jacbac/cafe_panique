@@ -1,0 +1,23 @@
+{
+  "name": "cafe_panique",
+  "version": "0.5.0",
+  "description": "Café du commerce",
+  "author": "jacbac",
+  "license": "MIT",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "panique"
+  ],
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-uglify": "~0.4.0",
+    "grunt-uncss": "~0.3.3",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-processhtml": "~0.3.3",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-clean": "~0.5.0"
+  }
+}
