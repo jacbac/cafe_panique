@@ -17,7 +17,7 @@ Install
 
 ```
 cd your_workspace/
-git clone ...
+git clone https://github.com/jacbac/jacbac.github.com.git
 
 cd cafe_panique
 npm install grunt-cli -g
