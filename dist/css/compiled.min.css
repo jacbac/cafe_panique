@@ -706,7 +706,8 @@ button:active {
 }
 
 #leinster-logic hgroup {
-  margin-bottom: 24px;
+  max-width: 900px;
+  margin: 0 auto 24px;
 }
 
 #leinster-logic h2,
