@@ -1,7 +1,9 @@
 CAFE PANIQUE
 ============
 
-Novel excerpts, photos, etc.
+Novel excerpts, photos, typography, responsive, etc.
+
+[Demo](http://jacbac.github.io/cafe_panique/)
 
 
 Required for dev
