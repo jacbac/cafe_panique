@@ -1,4 +1,4 @@
-CAFE PANIQUE
+Café Panique
 ============
 
 Novel excerpts, photos, typography, responsive, etc.

@@ -275,84 +275,98 @@ ul {
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 400;
-  src: local('Oswald Regular'), local('Oswald-Regular'), url(http://themes.googleusercontent.com/static/fonts/oswald/v8/Y_TKV6o8WovbUd3m_X9aAA.ttf) format('truetype');
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(http://fonts.gstatic.com/s/oswald/v10/Y_TKV6o8WovbUd3m_X9aAA.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 700;
-  src: local('Oswald Bold'), local('Oswald-Bold'), url(http://themes.googleusercontent.com/static/fonts/oswald/v8/bH7276GfdCjMjApa_dkG6aCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+  src: local('Oswald Bold'), local('Oswald-Bold'), url(http://fonts.gstatic.com/s/oswald/v10/bH7276GfdCjMjApa_dkG6aCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'Abril Fatface';
   font-style: normal;
   font-weight: 400;
-  src: local('Abril Fatface'), local('AbrilFatface-Regular'), url(http://themes.googleusercontent.com/static/fonts/abrilfatface/v6/X1g_KwGeBV3ajZIXQ9VnDibsRidxnYrfzLNRqJkHfFo.ttf) format('truetype');
+  src: local('Abril Fatface'), local('AbrilFatface-Regular'), url(http://fonts.gstatic.com/s/abrilfatface/v8/X1g_KwGeBV3ajZIXQ9VnDibsRidxnYrfzLNRqJkHfFo.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'Jura';
   font-style: normal;
   font-weight: 400;
-  src: local('Jura Regular'), local('Jura-Regular'), url(http://themes.googleusercontent.com/static/fonts/jura/v5/BaRU3GSISDJW2nIqbysbmg.ttf) format('truetype');
+  src: local('Jura Regular'), local('Jura-Regular'), url(http://fonts.gstatic.com/s/jura/v7/BaRU3GSISDJW2nIqbysbmg.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'Indie Flower';
   font-style: normal;
   font-weight: 400;
-  src: local('Indie Flower'), local('IndieFlower'), url(http://themes.googleusercontent.com/static/fonts/indieflower/v5/10JVD_humAd5zP2yrFqw6onF5uFdDttMLvmWuJdhhgs.ttf) format('truetype');
+  src: local('Indie Flower'), local('IndieFlower'), url(http://fonts.gstatic.com/s/indieflower/v7/10JVD_humAd5zP2yrFqw6onF5uFdDttMLvmWuJdhhgs.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'Quando';
   font-style: normal;
   font-weight: 400;
-  src: local('Quando-Regular'), url(http://themes.googleusercontent.com/static/fonts/quando/v2/r5DvKXdPMFvthtcoLLAk3w.ttf) format('truetype');
+  src: local('Quando-Regular'), url(http://fonts.gstatic.com/s/quando/v4/r5DvKXdPMFvthtcoLLAk3w.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'Alegreya Sans SC';
   font-style: normal;
   font-weight: 400;
-  src: local('Alegreya Sans SC'), local('AlegreyaSansSC-Regular'), url(http://themes.googleusercontent.com/static/fonts/alegreyasanssc/v1/6kgb6ZvOagoVIRZyl8XV-F1_68YLtTmKn7AnUVga1YU.ttf) format('truetype');
+  src: local('Alegreya Sans SC'), local('AlegreyaSansSC-Regular'), url(http://fonts.gstatic.com/s/alegreyasanssc/v3/6kgb6ZvOagoVIRZyl8XV-F1_68YLtTmKn7AnUVga1YU.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'Alegreya Sans SC';
   font-style: normal;
   font-weight: 500;
-  src: local('Alegreya Sans SC Medium'), local('AlegreyaSansSC-Medium'), url(http://themes.googleusercontent.com/static/fonts/alegreyasanssc/v1/AjAmkoP1y0Vaad0UPPR460hw8T3JzlsJFxhXJnERlgM.ttf) format('truetype');
+  src: local('Alegreya Sans SC Medium'), local('AlegreyaSansSC-Medium'), url(http://fonts.gstatic.com/s/alegreyasanssc/v3/AjAmkoP1y0Vaad0UPPR460hw8T3JzlsJFxhXJnERlgM.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
-  src: local('Lato Light'), local('Lato-Light'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/nj47mAZe0mYUIySgfn0wpQ.ttf) format('truetype');
+  src: local('Lato Light'), local('Lato-Light'), url(http://fonts.gstatic.com/s/lato/v11/nj47mAZe0mYUIySgfn0wpQ.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/v0SdcGFAl2aezM9Vq_aFTQ.ttf) format('truetype');
+  src: local('Lato Regular'), local('Lato-Regular'), url(http://fonts.gstatic.com/s/lato/v11/v0SdcGFAl2aezM9Vq_aFTQ.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/DvlFBScY1r-FMtZSYIYoYw.ttf) format('truetype');
+  src: local('Lato Bold'), local('Lato-Bold'), url(http://fonts.gstatic.com/s/lato/v11/DvlFBScY1r-FMtZSYIYoYw.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 900;
-  src: local('Lato Black'), local('Lato-Black'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/4cKlrioa77J2iqTqBgkRWg.ttf) format('truetype');
+  src: local('Lato Black'), local('Lato-Black'), url(http://fonts.gstatic.com/s/lato/v11/4cKlrioa77J2iqTqBgkRWg.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Special Elite';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Special Elite'), local('SpecialElite-Regular'), url(http://fonts.gstatic.com/s/specialelite/v6/9-wW4zu3WNoD5Fjka35JmybsRidxnYrfzLNRqJkHfFo.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Megrim';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Megrim'), url(http://fonts.gstatic.com/s/megrim/v7/JlLhrDdxVzh0R_XzRbjFhw.ttf) format('truetype');
 }
 
 article {
@@ -389,8 +403,8 @@ footer p {
 .image h2,
 .image h3,
 .image h4,
-.image button,
-.image .source {
+article button,
+article .source {
   font-family: 'Oswald', sans-serif;
   text-align: center;
   font-weight: 700;
@@ -681,6 +695,7 @@ button:active {
 }
 
 #gonzales-never .excerpt {
+  margin-bottom: 180px;
   font-family: 'Indie Flower', cursive;
   font-weight: 400;
   font-size: 1.6em;
@@ -796,6 +811,7 @@ button:active {
 }
 
 #odezenne-assez .excerpt {
+  margin-bottom: 180px;
   text-align: left;
   font-family: 'Lato', sans-serif;
   font-style: normal;
@@ -810,7 +826,7 @@ button:active {
 @media all and (min-width: 50em) {
   #odezenne-assez .excerpt {
     max-width: 900px;
-    margin: 0 auto;
+    margin: 0 auto 180px;
     -webkit-column-count: 2;
     -moz-column-count: 2;
     -webkit-column-gap: 40px;
@@ -834,6 +850,122 @@ button:active {
 }
 
 /* ---------------------------------------------------------------- */
+
+#reforme-rouge {
+  background-color: #588c75;
+  color: #fff;
+}
+
+#reforme-rouge h2,
+#reforme-rouge h3 {
+  text-align: right;
+  font-family: 'Megrim', cursive;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+#reforme-rouge h2 {
+  margin-top: 0;
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 0.88;
+}
+
+#reforme-rouge h3 {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+#reforme-rouge .excerpt,
+#reforme-rouge span {
+  font-family: 'Megrim', cursive;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  word-spacing: 0.1em;
+  line-height: 1.25;
+}
+
+#reforme-rouge .quote {
+  padding: 60px 0 60px;
+}
+
+#reforme-rouge p {
+  float: left;
+  width: 70%;
+  text-align: right;
+  margin-right: 72px;
+}
+
+#reforme-rouge span {
+  width: 30%;
+  text-align: left;
+  font-size: 16px;
+}
+
+/* ---------------------------------------------------------------- */
+
+#bashung-hall {
+  position: relative;
+  padding: 20% 30%;
+  background-color: #f3ae73;
+  color: #fff;
+}
+
+#bashung-hall hgroup {
+  position: absolute;
+  top: 520px;
+  right: -52px;
+  width: 200px;
+}
+
+#bashung-hall h2,
+#bashung-hall h3,
+#bashung-hall h4 {
+  font-family: 'Special Elite', cursive;
+  font-weight: 100;
+}
+
+#bashung-hall h2 {
+  margin-top: 0;
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 0.88;
+}
+
+#bashung-hall h3 {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+#bashung-hall h4 {
+  margin: 0.6em 0 0.5em;
+  font-size: 1.6em;
+  font-weight: 100;
+  line-height: 1.12;
+}
+
+#bashung-hall .excerpt {
+  margin-left: 244px;
+  margin-bottom: 180px;
+  font-family: 'Special Elite', cursive;
+  font-size: 1.4em;
+  word-spacing: 0.12em;
+  line-height: 1.4;
+  -webkit-transform: rotate(354deg);
+  -moz-transform: rotate(354deg);
+  -o-transform: rotate(354deg);
+  writing-mode: lr-tb;
+}
+
+#bashung-hall p {
+  margin: 32px 0;
+}
+
+#bashung-hall .her {
+  text-align: right;
+}
 
 /* ---------------------------------------------------------------- */
 

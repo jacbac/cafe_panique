@@ -32,8 +32,8 @@ footer p {
 .image h2,
 .image h3,
 .image h4,
-.image button,
-.image .source {
+article button,
+article .source {
   font-family: 'Oswald', sans-serif;
   text-align: center;
   font-weight: 700;
@@ -325,6 +325,7 @@ button:active {
 }
 
 #gonzales-never .excerpt {
+  margin-bottom: 180px;
   font-family: 'Indie Flower', cursive;
   font-weight: 400;
   font-size: 1.6em;
@@ -440,6 +441,7 @@ button:active {
 }
 
 #odezenne-assez .excerpt {
+  margin-bottom: 180px;
   text-align: left;
   font-family: 'Lato', sans-serif;
   font-style: normal;
@@ -454,7 +456,7 @@ button:active {
 @media all and (min-width: 50em) {
   #odezenne-assez .excerpt {
     max-width: 900px;
-    margin: 0 auto;
+    margin: 0 auto 180px;
     -webkit-column-count: 2;
        -moz-column-count: 2;
     -webkit-column-gap: 40px;
@@ -479,8 +481,120 @@ button:active {
 
 /* ---------------------------------------------------------------- */
 
-#catch22-heller {
+#reforme-rouge {
+  background-color: #588c75;
+  color: #fff;
+}
 
+#reforme-rouge h2,
+#reforme-rouge h3 {
+  text-align: right;
+  font-family: 'Megrim', cursive;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+#reforme-rouge h2 {
+  margin-top: 0;
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 0.88;
+}
+
+#reforme-rouge h3 {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+#reforme-rouge .excerpt,
+#reforme-rouge span {
+  font-family: 'Megrim', cursive;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  word-spacing: 0.1em;
+  line-height: 1.25;
+}
+
+#reforme-rouge .quote {
+  padding: 60px 0 60px;
+}
+
+#reforme-rouge p {
+  float: left;
+  width: 70%;
+  text-align: right;
+  margin-right: 72px;
+}
+
+#reforme-rouge span {
+  width: 30%;
+  text-align: left;
+  font-size: 16px;
+}
+
+/* ---------------------------------------------------------------- */
+
+#bashung-hall {
+  position: relative;
+  padding: 20% 30%;
+  background-color: #f3ae73;
+  color: #fff;
+}
+
+#bashung-hall hgroup {
+  position: absolute;
+  top: 520px;
+  right: -52px;
+  width: 200px;
+}
+
+#bashung-hall h2,
+#bashung-hall h3,
+#bashung-hall h4 {
+  font-family: 'Special Elite', cursive;
+  font-weight: 100;
+}
+
+#bashung-hall h2 {
+  margin-top: 0;
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 0.88;
+}
+
+#bashung-hall h3 {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+#bashung-hall h4 {
+  margin: 0.6em 0 0.5em;
+  font-size: 1.6em;
+  font-weight: 100;
+  line-height: 1.12;
+}
+
+#bashung-hall .excerpt {
+  margin-left: 244px;
+  margin-bottom: 180px;
+  font-family: 'Special Elite', cursive;
+  font-size: 1.4em;
+  word-spacing: 0.12em;
+  line-height: 1.4;
+  -webkit-transform: rotate(354deg);
+  -moz-transform: rotate(354deg);
+  -o-transform: rotate(354deg);
+  writing-mode: lr-tb;
+}
+
+#bashung-hall p {
+  margin: 32px 0;
+ }
+
+#bashung-hall .her {
+  text-align: right;
 }
 
 /* ---------------------------------------------------------------- */
