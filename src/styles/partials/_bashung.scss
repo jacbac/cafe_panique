@@ -57,7 +57,7 @@
         background-color: #f3ae73;
         color: #fff;
         border: 2px solid #fff;
-        &:hover {
+        &:hover, &.active {
             background-color: #fff;
             color: #f3ae73;
         }

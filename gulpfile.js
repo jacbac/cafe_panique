@@ -13,6 +13,7 @@ var sass         = require('gulp-sass');
 var uglify       = require('gulp-uglify');
 var minifyCss    = require('gulp-minify-css');
 var autoprefixer = require('gulp-autoprefixer');
+var uncss        = require('gulp-uncss');
 
 var jpegoptim    = require('imagemin-jpegoptim');
 var pngquant     = require('imagemin-pngquant');
@@ -31,7 +32,7 @@ var path = {
         dir: 'src/',
         styles: 'styles/**/*.*',
         scripts: 'scripts/**/*.*',
-        images: 'images/**/*.{png,jpg,jpeg,gif,svg}',
+        images: 'images/**/*.{png,jpg,jpeg,gif,svg,ico}',
         files: ['*']
     },
     dist: {
@@ -79,11 +80,22 @@ gulp.task('styles', function() {
     return gulp.src(path.src.dir + path.src.styles)
         .pipe(plumber({errorHandler: onError}))
         .pipe(sass())
+        .pipe(size({
+            // showFiles: true, // display a complete list of files
+            title: "Before CSS optimize"
+        }))
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
         }))
+        .pipe(uncss({
+            html: ['src/index.html']
+        }))
         .pipe(minifyCss())
+        .pipe(size({
+            // showFiles: true, // display a complete list of files
+            title: "After CSS optimize"
+        }))
         .pipe(rename({ extname: '.min.css'}))
         .pipe(gulp.dest(path.dist.dir + path.dist.styles))
         .pipe(browserSync.stream());
@@ -92,9 +104,17 @@ gulp.task('styles', function() {
 gulp.task('scripts', function() {
     return gulp.src(path.src.dir + path.src.scripts)
         .pipe(plumber({errorHandler: onError}))
+        .pipe(size({
+            // showFiles: true, // display a complete list of files
+            title: "Before JS optimize"
+        }))
         .pipe(uglify({
             mangle: true,
             preserveComments: false
+        }))
+        .pipe(size({
+            // showFiles: true, // display a complete list of files
+            title: "After JS optimize"
         }))
         .pipe(rename({ extname: '.min.js'}))
         .pipe(gulp.dest(path.dist.dir + path.dist.scripts));

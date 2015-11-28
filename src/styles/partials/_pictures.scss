@@ -3,7 +3,7 @@
     button {
         background-color: #BBBBB9;
         color: #FFF;
-        &:hover {
+        &:hover, &.active {
             background-color: #FFF;
             color: #BBBBB9;
         }
@@ -24,7 +24,7 @@
     button {
         background-color: #1E2C09;
         color: #FFF;
-        &:hover {
+        &:hover, &.active {
             background-color: #FFF;
             color: #1E2C09;
         }
@@ -38,7 +38,7 @@
         background-color: #E6E6E6;
         color: #000;
         border: 2px solid #000;
-        &:hover {
+        &:hover, &.active {
             background-color: #000;
             color: #E6E6E6;
         }
@@ -50,9 +50,20 @@
     button {
         background-color: #0B0B0B;
         color: #FFF;
-        &:hover {
+        &:hover, &.active {
             background-color: #FFF;
             color: #0B0B0B;
+        }
+    }
+}
+
+#bosch {
+    button {
+        background-color: #C9B495;
+        color: #FFF;
+        &:hover, &.active {
+            background-color: #FFF;
+            color: #C9B495;
         }
     }
 }
