@@ -12,6 +12,7 @@ var changed      = require('gulp-changed');
 var sass         = require('gulp-sass');
 var uglify       = require('gulp-uglify');
 var minifyCss    = require('gulp-minify-css');
+// var nano         = require('gulp-cssnano');
 var autoprefixer = require('gulp-autoprefixer');
 var uncss        = require('gulp-uncss');
 
@@ -92,6 +93,7 @@ gulp.task('styles', function() {
             html: ['src/index.html']
         }))
         .pipe(minifyCss())
+        // .pipe(nano()) // for test purpose
         .pipe(size({
             // showFiles: true, // display a complete list of files
             title: "After CSS optimize"
