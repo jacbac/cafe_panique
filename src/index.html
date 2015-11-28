@@ -7,12 +7,18 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
   <title>Cafe Panique</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width">
 
-  <!-- build:css dist/css/compiled.min.css -->
-  <link rel="stylesheet" href="css/bootstrap.css">
+  <meta name="description" content="">
+
+  <meta itemprop="name" content="NantesJS">
+  <meta itemprop="description" content="Communauté Nantaise des utilisateurs de JavaScript">
+
+  <link rel="author" href="/humans.txt">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+  <link rel="stylesheet" href="styles/bootstrap.min.css">
   <link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Jura' rel='stylesheet' type='text/css'>
@@ -22,14 +28,11 @@
   <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Megrim' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/main.css">
-  <!-- /build -->
-
+  <link rel="stylesheet" href="styles/main.min.css">
   <!-- Non Utilisé
   <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Gentium+Book+Basic:400,400italic|Vollkorn:400italic,400" rel="stylesheet" type="text/css">
   <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700|Josefin+Sans:300,400,600,700|Josefin+Slab:300,400,600,700|Varela+Round|Merriweather+Sans:400,300' rel='stylesheet' type='text/css'>
   -->
-
 </head>
 <body>
   <a href="https://github.com/jacbac/cafe_panique"><img style="position:absolute;top:0;right:0;border:0;width:inherit;margin:0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
@@ -84,7 +87,7 @@
       <h4>13 janvier 1968</h4>
     </hgroup>
     <figure>
-      <img src="img/johnny_cash_folsom_prison_1968.jpg"/>
+      <img src="images/johnny_cash_folsom_prison_1968.jpg"/>
     </figure>
     <button>Sources</button>
     <div class="source">
@@ -127,7 +130,7 @@
       <h4>1959 or 1962</h4>
     </hgroup>
     <figure>
-      <img src="img/castro_guevara_playing_golf_1962.jpg"/>
+      <img src="images/castro_guevara_playing_golf_1962.jpg"/>
     </figure>
     <button>Sources</button>
     <div class="source">
@@ -257,7 +260,7 @@
       <h4>1942 / 1943</h4>
     </hgroup>
     <figure>
-      <img src="img/boy_cincinnati,_ohio_1942_1943.jpg"/>
+      <img src="images/boy_cincinnati,_ohio_1942_1943.jpg"/>
     </figure>
     <button>Sources</button>
     <div class="source">
@@ -285,7 +288,7 @@
       <h4>1912</h4>
     </hgroup>
     <figure>
-      <img src="img/eastern_islands_dec_1912.jpg"/>
+      <img src="images/eastern_islands_dec_1912.jpg"/>
     </figure>
     <button>Sources</button>
     <div class="source">
@@ -319,7 +322,7 @@
       <h4>1982</h4>
     </hgroup>
     <figure>
-      <img src="img/mafia_murder_in_palermo_1982.jpg"/>
+      <img src="images/mafia_murder_in_palermo_1982.jpg"/>
     </figure>
     <button>Sources</button>
     <div class="source">
@@ -350,6 +353,23 @@
         </p>
         <span class="quote-src">&laquo;Problèmes de la guerre et de la stratégie&raquo; (6 novembre 1938), Œuvres choisies de François Hollande, tome II</span>
       </div>
+    </div>
+  </article>
+
+  <article id="bosch">
+    <hgroup class="font-effect-emboss">
+      <h2>Studies of </h2>
+      <h3>Beggars and Cripples</h3>
+      <h3>between 1465 and 1516</h3>
+    </hgroup>
+    <figure>
+      <img src="images/beggars_and_cripples.jpg"/>
+    </figure>
+    <button>Sources</button>
+    <div class="source">
+      <ul>
+        <li><a href="https://commons.wikimedia.org/wiki/File:Beggars_and_Cripples.jpg" target="_blank">Original source</a></li>
+      </ul>
     </div>
   </article>
 
@@ -460,13 +480,69 @@
     </div>
   </article>
 
+  <article class="" id="catch22-heller">
+    <div class="excerpt">
+      <hgroup>
+        <h2>Catch 22</h2>
+        <h3>Joseph Heller</h3>
+        <h4>1961</h4>
+      </hgroup>
+    </div>
+  </article>
+
+  <article class="image" id="fijian-portrait">
+    <hgroup class="font-effect-emboss">
+      <h2>Woman and man</h2>
+      <h3>From Fijian Islands</h3>
+      <h4>1882</h4>
+    </hgroup>
+    <figure>
+      <img src="/images/portrait_of_fijian_man_and_woman_1884.jpg"/>
+    </figure>
+    <button>Sources</button>
+    <div class="source">
+      <ul>
+        <li><a href="http://redd.it/223o3e">Original source</a></li>
+        <li><a href="http://natlib.govt.nz/records/22337624">Official</a></li>
+        <li><a href="http://fr.wikipedia.org/wiki/Fidji">Wikipedia</a></li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="" id="ruskoffs-cavanna">
+    <div class="excerpt">
+      <hgroup>
+        <h2>Les Ruskoffs</h2>
+        <h3>Cavanna</h3>
+        <h4>1979</h4>
+      </hgroup>
+      <p>J'ai vu crouler Berlin, nuit après nuit, nuit après nuit. Jour après jour quand les Américains s'y sont mis. tros mille forteresses volantes dans le grand soleil de midi, lâchant d'un seul coup leurs bombes, toutes leurs bombes, toutes ensemble, au commandement. Un &laquo; bombardement-tapis &raquo;, ça s'apelle. Venez écouter un bombardement-tapis, une seule fois, d'EN DESSOUS, et puis nous parlerons des connards qui vous expliquent qu'il faut se battre, hélas, hélas, c'est bien triste mais on n'a pas le choix, alors que ces mêmes fumiers, ou leurs cousins, ont laissé tranquillement grossir la bête, l'ont écoutée proclamer ses desseins, l'ont laissée violer les traités sacros-saints, l'ont regardée préparer la grande boucherie, l'y ont aidée, l'y ont poussée... Et merde, où je m'en vais ? Combien avant moi ont vomi la guerre parce qu'ils l'avaient eue sur la gueule, combien de Barbusse, combien de Rilke ?... Et qu'est-ce que ça a changé ? Les hommes sont comme ça, la guerre n'est pas la monstruosité qu'on prétend et qui ne révolte que les sensiblards dans mon genre. La guerre est le produit normal, fatal, de toutes réunions d'hommes. Passe ta crise, mon grand, gueule un bon coup, et puis planque-toi. Sauve ta peaux, sauve ceux que tu aimes. N'en aime pas trop, t'aurais pas les bras assez grands.</p>
+    </div>
+  </article>
+
+  <article class="image" id="dresden-ww2">
+    <hgroup class="font-effect-emboss">
+      <h2>Dresden</h2>
+      <h3>After the bombing</h3>
+      <h4>1945</h4>
+    </hgroup>
+    <figure>
+      <img src="images/dresden_1985.jpg"/>
+    </figure>
+    <button>Sources</button>
+    <div class="source">
+      <ul>
+        <li><a href="http://redd.it/23eb6a">Original source</a></li>
+      </ul>
+    </div>
+  </article>
+
+
   <footer>
     <p>You can <a href="http://github.com/jacbac/cafe_panique">watch this repo on Github</a> or <a href="http://twitter.com/jacbachelier">follow me on Twitter</a>.</p>
   </footer>
 
-  <!-- build:js dist/js/compiled.min.js -->
-  <script src="js/main.js"></script>
-  <!-- /build -->
+  <script src="scripts/main.min.js"></script>
 
   <script>
     // var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
@@ -476,4 +552,3 @@
   </script>
 </body>
 </html>
-

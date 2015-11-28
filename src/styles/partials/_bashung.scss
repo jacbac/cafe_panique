@@ -1,0 +1,65 @@
+#bashung-hall {
+    position: relative;
+    padding: 20% 30%;
+    background-color: #f3ae73;
+    color: #fff;
+    hgroup {
+        position: absolute;
+        top: 520px;
+        right: -52px;
+        width: 200px;
+    }
+    h2,
+    h3,
+    h4 {
+        font-family: 'Special Elite', cursive;
+        font-weight: 100;
+    }
+    h2 {
+        margin-top: 0;
+        font-size: 64px;
+        font-weight: 800;
+        line-height: 0.88;
+    }
+
+    h3 {
+        font-size: 2em;
+        font-weight: 400;
+    }
+
+    h4 {
+        margin: 0.6em 0 0.5em;
+        font-size: 1.6em;
+        font-weight: 100;
+        line-height: 1.12;
+    }
+
+    .excerpt {
+        margin-left: 244px;
+        margin-bottom: 180px;
+        font-family: 'Special Elite', cursive;
+        font-size: 1.4em;
+        word-spacing: 0.12em;
+        line-height: 1.4;
+        transform: rotate(354deg);
+        writing-mode: lr-tb;
+    }
+
+    p {
+        margin: 32px 0;
+    }
+
+    .her {
+        text-align: right;
+    }
+
+    button {
+        background-color: #f3ae73;
+        color: #fff;
+        border: 2px solid #fff;
+        &:hover {
+            background-color: #fff;
+            color: #f3ae73;
+        }
+    }
+}

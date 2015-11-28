@@ -1,0 +1,57 @@
+#topor-cafe {
+    background-color: #960018;
+    color: #fff;
+    hgroup {
+        margin: 30px 60px 47px;
+    }
+
+    h2,
+    h3,
+    h4 {
+        font-family: 'Abril Fatface', sans-serif;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 4.3em;
+    }
+
+    h3,
+    h4 {
+        font-size: 2.4em;
+    }
+
+    .excerpt {
+        margin: 0 auto;
+        font-family: 'Abril Fatface';
+        font-weight: 300;
+        font-size: 1.4em;
+        text-align: justify;
+        line-height: 1.8;
+    }
+
+    .group-unicity {
+        max-width: 730px;
+        margin: 0 auto;
+    }
+}
+
+@media all and (min-width: 46em) {
+    #topor-cafe hgroup {
+        white-space: pre;
+        float: right;
+        margin: -92px 0.4em 200px;
+    }
+
+    #topor-cafe h2 {
+        white-space: pre;
+        float: left;
+        width: 25%;
+        margin: -65px 0 200px -88px;
+    }
+
+    #topor-cafe .excerpt {
+        margin-left: 130px;
+    }
+}
