@@ -4,7 +4,7 @@ Café Panique
 Novel excerpts, photos, typography, responsive, etc.
 A secluded place for own design enhancements, minor tests and "at that time" lectures and/or inspirations. 
 
-[Demo](http://jacbac.github.io/cafe_panique/)
+[Demo](https://jacbac.github.io/cafe_panique/)
 
 Fork it to propose enhancements, as it is in a `master` branch, you can show the result of your version to anyone via URLs formed like this:
 
