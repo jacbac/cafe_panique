@@ -21,7 +21,7 @@ footer {
 }
 
 article button,
-article .source {
+.source {
     font-family: 'Oswald', sans-serif;
     text-align: center;
     font-weight: 700;
@@ -81,11 +81,14 @@ button {
         background-color: #FFF;
         color: #000;
     }
+
+    &:focus {
+        outline: none;
+    }
 }
 
 .source {
     opacity: 0;
-    text-align: center;
     ul {
         list-style-type: none;
         padding: 20px;
@@ -108,13 +111,12 @@ button {
             border-bottom: 1px solid #FFF;
         }
     }
-}
 
-.is-visible {
-    opacity: 1;
-    transition: opacity 500ms ease;
+    &.is-visible {
+        opacity: 1;
+        transition: opacity 500ms ease;
+    }
 }
-
 
 @media all and (min-width: 37.5em) {
     .image h2 {

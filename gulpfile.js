@@ -1,33 +1,34 @@
-var gulp         = require('gulp');
-var notify       = require('gulp-notify');
-var plumber      = require('gulp-plumber');
-var rename       = require('gulp-rename');
+var gulp = require('gulp');
+var notify = require('gulp-notify');
+var plumber = require('gulp-plumber');
 var browserSync  = require('browser-sync').create();
-var size         = require('gulp-size');
-var exec         = require('child_process').exec;
-var del          = require('del');
-var gPath        = require('path');
-var changed      = require('gulp-changed');
+var size = require('gulp-size');
+var exec = require('child_process').exec;
+var del = require('del');
+var gPath = require('path');
+var changed = require('gulp-changed');
+var concat = require('gulp-concat');
 
-var sass         = require('gulp-sass');
-var uglify       = require('gulp-uglify');
-var minifyCss    = require('gulp-minify-css');
-// var nano         = require('gulp-cssnano');
-var autoprefixer = require('gulp-autoprefixer');
-var uncss        = require('gulp-uncss');
+// Styles
+var postcss = require('gulp-postcss');
+var sass =  require('gulp-sass');
+var uncss = require('gulp-uncss');
+var autoprefixer = require('autoprefixer');
+var cssnano = require('cssnano');
 
-var jpegoptim    = require('imagemin-jpegoptim');
-var pngquant     = require('imagemin-pngquant');
-var optipng      = require('imagemin-optipng');
-var svgo         = require('imagemin-svgo');
+// Scripts
+var uglify = require('gulp-uglify');
 
-var ghPages      = require('gulp-gh-pages');
+// Images
+var image = require('gulp-image');
+
+// Deploy
+var ghPages = require('gulp-gh-pages');
 
 /* ========================================================================== */
 /* CONFIG HELPER                                                              */
 /* ========================================================================== */
 
-var pkg  = require('./package.json');
 var path = {
     src: {
         dir: 'src/',
@@ -62,7 +63,7 @@ var onError = function(err) {
 // Static Server + watching scss/js/html files
 gulp.task('default', ['serve']);
 
-gulp.task('serve', ['styles', 'scripts', 'files', 'images'], function() {
+gulp.task('serve', ['scripts', 'files', 'images', 'styles'], function() {
     browserSync.init({
         server: {
             baseDir: "dist/"
@@ -76,8 +77,15 @@ gulp.task('serve', ['styles', 'scripts', 'files', 'images'], function() {
 /* GENERAL TASKS                                                              */
 /* ========================================================================== */
 
-// Compile sass into CSS & auto-inject into browsers
 gulp.task('styles', function() {
+    var processors = [
+        autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }),
+        cssnano()
+    ];
+
     return gulp.src(path.src.dir + path.src.styles)
         .pipe(plumber({errorHandler: onError}))
         .pipe(sass())
@@ -85,20 +93,16 @@ gulp.task('styles', function() {
             // showFiles: true, // display a complete list of files
             title: "Before CSS optimize"
         }))
-        .pipe(autoprefixer({
-            browsers: ['last 2 versions'],
-            cascade: false
-        }))
+        .pipe(postcss(processors))
         .pipe(uncss({
+            ignore: [/\.is-visible/, /\.test/],
             html: ['src/index.html']
         }))
-        .pipe(minifyCss())
-        // .pipe(nano()) // for test purpose
         .pipe(size({
             // showFiles: true, // display a complete list of files
             title: "After CSS optimize"
         }))
-        .pipe(rename({ extname: '.min.css'}))
+        .pipe(concat('styles.min.css'))
         .pipe(gulp.dest(path.dist.dir + path.dist.styles))
         .pipe(browserSync.stream());
 });
@@ -110,16 +114,13 @@ gulp.task('scripts', function() {
             // showFiles: true, // display a complete list of files
             title: "Before JS optimize"
         }))
-        .pipe(uglify({
-            mangle: true,
-            preserveComments: false
-        }))
+        .pipe(uglify())
         .pipe(size({
             // showFiles: true, // display a complete list of files
             title: "After JS optimize"
         }))
-        .pipe(rename({ extname: '.min.js'}))
-        .pipe(gulp.dest(path.dist.dir + path.dist.scripts));
+        .pipe(concat('scripts.min.js'))
+        .pipe(gulp.dest(path.dist.dir + path.dist.scripts))
 });
 
 gulp.task('files', function() {
@@ -137,17 +138,7 @@ gulp.task('images', function() {
             title: "Before optimize"
         }))
         .pipe(plumber({errorHandler: onError}))
-        .pipe(pngquant({
-            quality: '65-80',
-            speed: 4
-        })())
-        .pipe(optipng({
-            optimizationLevel: 3
-        })())
-        .pipe(jpegoptim({
-            max: 70
-        })())
-        .pipe(svgo()())
+        .pipe(image())
         .pipe(size({
             // showFiles: true, // display a complete list of files
             title: "After optimize"

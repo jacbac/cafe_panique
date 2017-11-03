@@ -2,12 +2,13 @@ Café Panique
 ============
 
 Novel excerpts, photos, typography, responsive, etc.
+A secluded place for own design enhancements, minor tests and "at that time" lectures and/or inspirations. 
 
 [Demo](http://jacbac.github.io/cafe_panique/)
 
 Fork it to propose enhancements, as it is in a `master` branch, you can show the result of your version to anyone via URLs formed like this:
 
-    http://{Your_GitHub_Username}.github.com/cafe-panique/
+    https://{GitHub_username}.github.com/cafe-panique/
 
 Required for dev
 ----------------
@@ -17,12 +18,11 @@ Required for dev
 * A browser
 * npm
 
-
 Install
 -------
 
-```
-cd /home/your_user/your_workspace
+```shell
+cd ~/your_workspace
 git clone {YOUR_CAFE_PANIQUE_FORK}
 cd cafe_panique
 git checkout master
@@ -31,12 +31,11 @@ git checkout master
 
 Finally,
 
-```
+```shell
 npm start
 ```
 
 :metal: That's it. Up and running !
-
 
 Deploy on gh-pages
 ------------------
@@ -73,7 +72,6 @@ Dev made possible with
 * [Ish](http://bradfrostweb.com/blog/post/ish/)
 * [sass](http://sass-lang.com/)
 * [gulp](http://gulpjs.com/)
-
 * [gulp-notify](https://www.npmjs.com/package/gulp-notify)
 * [gulp-plumber](https://www.npmjs.com/package/gulp-plumber)
 * [gulp-rename](https://www.npmjs.com/package/gulp-rename)
@@ -89,6 +87,7 @@ Dev made possible with
 
 ### Image optimization
 
+* [jquery.adaptive-backgrounds](http://briangonzalez.github.io/jquery.adaptive-backgrounds.js/)
 * [imagemin-jpegoptim](https://www.npmjs.com/package/imagemin-jpegoptim)
 * [imagemin-pngquant](https://www.npmjs.com/package/imagemin-pngquant)
 * [imagemin-optipng](https://www.npmjs.com/package/imagemin-optipng)

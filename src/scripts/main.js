@@ -10,7 +10,7 @@
         buttons[ii].addEventListener('click', toggle, false);
     }
 
-    $(document).ready(function(){
+    $(document).ready(function() {
         $.adaptiveBackground.run();
     });
 })(document);

@@ -43,6 +43,10 @@
             color: #E6E6E6;
         }
     }
+
+    a {
+        color: #000;
+    }
 }
 
 #mafia-palermo {
@@ -58,12 +62,25 @@
 }
 
 #bosch {
+    background-color: #C9B495;
     button {
         background-color: #C9B495;
         color: #FFF;
         &:hover, &.active {
             background-color: #FFF;
             color: #C9B495;
+        }
+    }
+}
+
+#dresden-ww2 {
+    background-color: rgb(126, 126, 126);
+    button {
+        background-color: rgb(126, 126, 126);
+        color: #FFF;
+        &:hover, &.active {
+            background-color: #FFF;
+            color: rgb(126, 126, 126);
         }
     }
 }
